@@ -1,0 +1,297 @@
+.main-head {
+  margin-top: 50px;
+  font-size: 4rem !important;
+  font-weight: 900 !important;
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
+  color: black;
+}
+
+.card-disc {
+  color: black !important;
+  text-align: center !important;
+  font-size: 1.5rem;
+  line-height: 1.25;
+  font-weight: 700;
+  margin-top: 30px;
+}
+
+.card-and-disc {
+  width: 30%; 
+  margin-top: 30px;
+}
+
+@media (max-width: 768px) {
+  .main-head {
+    font-size: 3rem !important;
+    margin-top: 40px;
+  }
+}
+
+@media (max-width: 480px) {
+  .main-head {
+    font-size: 2.5rem !important;
+    margin-top: 30px;
+  }
+}
+
+.disc {
+  color: black;
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
+  font-size: 1.25rem;
+  margin-top: 2rem;
+  max-width: 65ch;
+  margin-bottom: 50px !important;
+}
+
+@media (max-width: 768px) {
+  .disc {
+    font-size: 1.5rem;
+    max-width: 90%;
+  }
+}
+
+@media (max-width: 480px) {
+  .disc {
+    font-size: 1.25rem;
+    max-width: 100%;
+    margin-top: 1rem;
+  }
+}
+
+.arrow-button {
+  --primary-color: white;
+  --secondary-color: white;
+  --arrow-width: 10px;
+  --arrow-stroke: 2px;
+  box-sizing: border-box;
+  color: black;
+  padding: 10px;
+  display: flex;
+  flex-direction: column; 
+  justify-content: space-between; 
+  width: 100%;
+  height: 480px;
+  cursor: pointer;
+  border-radius: 8px;
+  line-height: 1;
+  column-gap: 0.5rem;
+  overflow: hidden; 
+}
+
+@media (max-width: 768px) {
+  .arrow-button {
+    width: 100%;
+    margin-top: 20px !important;
+    height: 300px;
+  }
+}
+
+.arrow-button:hover {
+  background-size: 180% !important; 
+}
+
+.logo-arrow-wrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+}
+
+.card-wealthsimple {
+  background: radial-gradient(
+    circle at 48% 42%,
+    rgba(0, 0, 0, 0.6) 0%,
+    rgba(0, 0, 0, 0.41) 0%,
+    rgba(0, 0, 0, 0.47) 37%,
+    rgba(0, 0, 0, 0.4) 70%,
+    rgba(0, 0, 0, 0.21) 97%,
+    rgba(255, 255, 255, 0) 100%
+  ),
+  url('https://www.ada.cx/_astro/client-wealthsimple-tile.q4IeYP2x_27adKy.webp') !important;
+  background-size: cover !important;
+  background-position: center !important;
+  background-repeat: no-repeat !important;
+}
+
+.card-neptune {
+  background: radial-gradient(
+    circle at 48% 42%,
+    rgba(1, 75, 153, 0.6) 0%,   
+    rgba(1, 75, 153, 0.41) 0%,  
+    rgba(1, 75, 153, 0.47) 37%, 
+    rgba(1, 75, 153, 0.4) 70%,  
+    rgba(1, 75, 153, 0.21) 97%, 
+    rgba(255, 255, 255, 0) 100%    
+  ),
+  url('https://www.ada.cx/_astro/client-neptuneflood-tile.qkz91D6c_ZcbHJe.webp') !important;
+  background-size: cover !important;
+  background-position: center !important;
+  background-repeat: no-repeat !important;
+}
+
+.card-tango {
+  background: radial-gradient(
+    circle at 48% 42%,
+    rgba(233, 90, 34, 0.6) 0%,      
+    rgba(233, 90, 34, 0.41) 0%,     
+    rgba(233, 90, 34, 0.47) 37%,    
+    rgba(233, 90, 34, 0.4) 70%,     
+    rgba(233, 90, 34, 0.21) 97%,    
+    rgba(255, 255, 255, 0) 100%     
+  ),
+  url('https://www.ada.cx/_astro/client-tangocard-tile.CcW0EzEY_Z16Ex7B.webp') !important;
+  background-size: cover !important;
+  background-position: center !important;
+  background-repeat: no-repeat !important;
+}
+
+.arrow-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-left: 10px;
+}
+
+.arrow {
+  margin-top: 1px;
+  width: var(--arrow-width);
+  height: var(--arrow-stroke);
+  position: relative;
+  transition: 0.2s;
+}
+
+.arrow::before {
+  content: "";
+  box-sizing: border-box;
+  position: absolute;
+  border: solid var(--secondary-color);
+  border-width: 0 var(--arrow-stroke) var(--arrow-stroke) 0;
+  display: inline-block;
+  top: -3px;
+  right: 3px;
+  transition: 0.2s;
+  padding: 3px;
+  transform: rotate(-45deg);
+}
+
+.arrow-button:hover .arrow {
+  background: var(--secondary-color);
+}
+
+.arrow-button:hover .arrow:before {
+  right: 0;
+}
+
+.stat-number {
+  font-size: 4rem !important;
+  font-weight: 800 !important;
+  color: white !important;
+  font-weight: bold;
+  text-align: left;
+}
+
+.stat-head-wrapper {
+  display: flex;
+  align-items: baseline;
+  gap: 0.5rem;
+}
+
+.stat-number {
+  font-size: 6rem !important;
+  font-weight: 800 !important;
+  color: white !important;
+  margin: 0;
+}
+
+.sign {
+  color: white;
+  font-weight: 800 !important;
+  font-size: 4rem !important;
+  margin: 0;
+}
+
+.stat-text {
+  margin-top: 10px;
+  width: 367px;
+  font-size: 1.6rem !important;
+  font-weight: 700 !important;
+  line-height: 1.15 !important;
+  color: white;
+  text-align: left;
+}
+
+@media (max-width: 768px) {
+  .stat-number {
+    font-size: 5rem !important;
+  }
+
+  .sign {
+    font-size: 3rem !important;
+  }
+
+  .stat-text {
+    font-size: 1.4rem !important;
+  }
+}
+
+@media (max-width: 480px) {
+  .stat-number {
+    font-size: 4rem !important;
+  }
+
+  .sign {
+    font-size: 2.5rem !important;
+  }
+
+  .stat-text {
+    font-size: 1.2rem !important;
+    width: auto; /* Make it responsive */
+  }
+}
+
+.logo-text {
+  font-size: 1.5rem;
+  font-weight: bold;
+  opacity: 0.8;
+}
+
+@media (max-width: 768px) {
+  .logo-text {
+    font-size: 1.25rem;
+  }
+}
+
+.cards-group {
+  display: flex; 
+  justify-content: space-around; 
+  flex-wrap: wrap;
+  margin-bottom: 80px; 
+}
+
+@media (max-width: 768px) {
+  .cards-group {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .card-and-disc {
+    width: 100%; /* Full width on tablet */
+    margin-top: 20px;
+  }
+}
+
+@media (max-width: 480px) {
+  .cards-group {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .card-and-disc {
+    width: 100%; /* Full width on mobile */
+    margin-top: 20px;
+  }
+}

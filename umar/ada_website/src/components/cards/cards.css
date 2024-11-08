@@ -1,0 +1,90 @@
+* {
+    font-family: Inter Variable, ui-sans-serif, system-ui, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+}
+
+.card {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    width: 100%;
+    height: auto; 
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+    border: none;
+    border-radius: 0.5rem !important;
+    padding: 2rem 1.5rem;
+    background: #fff9 !important;
+}
+.cardsgroup{
+    margin-top: 50px;
+
+}
+
+.card-title {
+    color: #9977D4 !important;
+    text-align: center;
+    font-size: 3rem !important; 
+    font-weight: 800 !important;
+}
+
+.card-text {
+    color: black;
+    text-align: center;
+    font-size: clamp(1rem, 2.5vw, 1.125rem) !important;
+    line-height: 1.15 !important;
+    font-weight: 700 !important;
+    margin-top: 0.5rem !important;
+}
+
+.card-sub {
+    font-weight: 800;
+    font-size: 1.25rem;
+    display: inline;
+    color: #9977D4;
+}
+
+/* Responsive adjustments */
+@media (max-width: 767px) {
+    .card {
+        height: auto; 
+
+    }
+    .card-title {
+        font-size: 2.5rem !important;
+    }
+    .card-sub {
+        font-size: 1rem;
+    }
+}
+
+@media (min-width: 768px) and (max-width: 1024px) {
+    .card-container {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      margin-left: auto;
+      margin-right: auto;
+      gap: 20px !important;
+    }
+    
+    .card-title{
+        font-size: 1.9rem !important;
+    }
+    .card-text{
+        font-size: 0.9rem !important;
+    }
+  
+    .card {
+      flex: 1 1 230px;
+      width: 175px !important;
+      height: 150px !important;
+      padding: 10px;
+    }
+  
+    .card-sub {
+      font-weight: 800;
+      font-size: 1.25rem;
+      display: inline;
+      color: #9977D4;
+    }
+  }
+  
