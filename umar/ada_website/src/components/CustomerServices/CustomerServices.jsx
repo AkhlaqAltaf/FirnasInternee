@@ -13,7 +13,7 @@ export default function CustomerServices() {
       </div>
       
       <Row className="card-row">
-        <Col md={4} className="mb-4 card-ada-messaging">
+        <Col className="mb-4 card-ada-messaging">
         <Card
               image="https://www.ada.cx/_astro/home-channel-messaging.aJmu-1wE_Z1DPh45.webp"
               title="Ada Messaging"
@@ -24,7 +24,7 @@ export default function CustomerServices() {
               cardBgGradeint="card1"
             />
         </Col>
-        <Col md={4} className="mb-4 card-ada-voice">
+        <Col className="mb-4 card-ada-voice">
           <Card
             image="https://www.ada.cx/_astro/home-channel-voice.CPA6z5YD_Z2d7m7x.webp"
             title="Ada Voice"
@@ -35,7 +35,7 @@ export default function CustomerServices() {
             cardBgGradeint="card2"
           />
         </Col>
-        <Col md={4} className="mb-4 card-ada-email">
+        <Col className="mb-4 card-ada-email">
           <Card
             image="https://www.ada.cx/_astro/home-channel-email.9g-B7w4y_2gYsBr.webp"
             title="Ada Email"
@@ -63,8 +63,8 @@ function Card({ image, title, msgImg, btnClass, msgImgClass, cardBgGradeint, msg
           <img src={msgImg} alt="Message Overlay" className={`msg-img ${msgImgSizeClass}`} />
         </div>
         <div className="card-footer">
-          <h5 className="card-title">{title}</h5>
-          <button className={`btn btn-outline-light ${btnClass}`}>Learn More</button>
+          <h5 className="card-heading">{title}</h5>
+          <button className={`btn btn-outline-light learn-btn ${btnClass}`}>Learn More</button>
         </div>
       </div>
     </div>
