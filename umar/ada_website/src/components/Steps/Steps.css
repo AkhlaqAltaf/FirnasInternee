@@ -1,0 +1,233 @@
+/* Base styling */
+.steps {
+    background: linear-gradient(88deg, rgba(29, 34, 44, 1) 0%, rgba(29, 34, 44, 1) 25%, rgba(32, 40, 59, 1) 35%, rgba(57, 65, 81, 1) 55%);
+    width: 97% !important;
+    height: auto;
+    max-width: 1500px;
+    margin: auto;
+    border-radius: 10px;
+    padding: 20px;
+    position: relative;
+}
+
+.text {
+    color: white;
+    text-align: center;
+}
+
+.steps-head {
+    line-height: 1.15;
+    font-weight: 900;
+    font-size: clamp(1.5rem, 4vw, 3rem);
+    padding-top: 90px;
+    transition: opacity 0.5s ease-in-out;
+}
+
+.steps-disc {
+    color: transparent;
+    background: linear-gradient(90deg, rgba(227, 212, 252, 1) 0%, rgba(217, 221, 249, 1) 25%, rgba(214, 224, 249, 1) 48%, rgba(202, 235, 246, 1) 64%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    font-size: clamp(1rem, 3vw, 2rem);
+    line-height: 1.15;
+    font-weight: 700;
+    transition: opacity 0.5s ease-in-out;
+    margin: 20px auto;
+}
+
+.crousal-contents {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.crousal-column {
+    display: flex;
+    flex-direction: column;
+    align-items: left;
+    gap: 20px;
+}
+
+.crousal-buttons {
+    margin-top: 60px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: left;
+}
+
+.crous-btn {
+    width: 90px !important;
+    height: 30px;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    font-weight: 500;
+    font-size: 15px;
+    justify-content: center;
+}
+
+.crousal-heading {
+    font-weight: 750;
+    font-size: clamp(1.5rem, 5vw, 2.5rem);
+    margin-top: 20px;
+    text-align: left;
+    width: 550px;
+    word-spacing: -2px;
+}
+
+.crousal-disc {
+    line-height: 1.5;
+    font-size: clamp(1rem, 2.5vw, 1.125rem);
+    margin-top: 10px;
+    width: 90% !important;
+    max-width: 630px;
+    text-align: left;
+    word-spacing: 2px;
+    margin-top: 40px;
+    margin-bottom: 80px;
+}
+
+.image-stack {
+    position: relative;
+    width: 100%;
+    max-width: 450px;
+    margin: 90px auto;
+    overflow: visible;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.stacked-image-wrapper {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: transform 0.6s ease, opacity 0.5s ease;
+}
+
+.stacked-image {
+    width: 100%;
+    height: 100%;
+    border-radius: 20px;
+    transition: transform 0.5s ease, opacity 0.5s ease, background-color 0.5s ease;
+    background-color: transparent;
+}
+
+.swiper-slide-active .stacked-image {
+    transform: scale(1) translate(0, 0);
+    opacity: 1 !important;
+    z-index: 3;
+    background-color: white !important;
+}
+
+.swiper-slide-next .stacked-image {
+    transform: scale(0.8) translate(20px, 10px);
+    opacity: 0.85;
+    z-index: 2;
+}
+
+.swiper-slide-prev .stacked-image {
+    transform: scale(0.8) translate(40px, 20px);
+    opacity: 0.85;
+    z-index: 2;
+}
+
+/* Responsive styling */
+@media (max-width: 1024px) {
+    .steps-head {
+        font-size: 2.5rem;
+        padding-top: 60px;
+    }
+    .steps-disc {
+        font-size: 1.5rem;
+    }
+    .crousal-heading {
+        font-size: 2rem;
+        text-align: center;
+    }
+    .crousal-disc {
+        font-size: 1rem;
+        text-align: center;
+    }
+    .image-stack {
+        max-width: 400px;
+    }
+    .crousal-column{
+        align-items: center;
+    }
+}
+
+@media (max-width: 768px) {
+    .steps-head {
+        font-size: 2rem;
+    }
+    .steps-disc {
+        font-size: 1.25rem;
+    }
+    .crousal-heading {
+        font-size: 1.75rem;
+    }
+    .crous-btn {
+        width: 70px;
+        height: 30px;
+    }
+    .image-stack {
+        max-width: 350px;
+    }
+}
+
+/* Responsive styling */
+@media (max-width: 480px) {
+    .steps {
+        padding: 15px;
+        width: 100% !important;
+    }
+    .steps-head {
+        font-size: 1.5rem;
+        padding-top: 40px;
+    }
+    .steps-disc {
+        font-size: 0.875rem;
+        margin: 10px auto;
+    }
+    .crousal-contents {
+        flex-direction: column;
+        align-items: center;
+    }
+    .crousal-column {
+        align-items: center;
+        text-align: center;
+    }
+    .crousal-heading {
+        font-size: 1.25rem;
+        text-align: center;
+        width: 100%;
+        margin-top: 15px;
+    }
+    .crousal-disc {
+        font-size: 0.875rem;
+        width: 100%;
+        margin: 20px auto;
+    }
+    .crousal-buttons {
+        margin-top: 30px;
+        gap: 10px;
+        justify-content: center;
+    }
+    .crous-btn {
+        width: 70px;
+        height: 28px;
+        font-size: 0.875rem;
+    }
+    .image-stack {
+        max-width: 200px;
+        margin: 50px auto;
+    }
+    .stacked-image-wrapper {
+        transform: scale(0.85);
+    }
+}

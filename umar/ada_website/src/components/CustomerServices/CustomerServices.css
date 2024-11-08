@@ -1,0 +1,158 @@
+.Services {
+    padding: 3rem 1rem;
+    background-color: #f8f9fa;
+}
+
+.main-head {
+    font-size: 2rem;
+    font-weight: bold;
+    color: #333;
+}
+
+.disc {
+    font-size: 1.25rem;
+    color: #666;
+}
+
+.card-row {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: nowrap !important;
+    gap: 1rem;
+}
+
+.custom-card {
+    position: relative;
+    border-radius: 15px;
+    overflow: hidden;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    display: flex;
+    flex-direction: column !important;
+}
+
+.card-img-wrapper {
+    position: relative;
+}
+
+.card-img {
+    width: 100%;
+    height: 500px;
+    background-position: center;
+    background-size: cover;
+}
+
+.card-gradient-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    pointer-events: none;
+}
+
+.card1{
+    background: linear-gradient(18deg, rgba(225, 212, 249, 1) 18%, rgba(225, 212, 249, 0.62) 26%, rgba(225, 212, 249, 0.42) 35%, rgba(225, 212, 249, 0.54) 50%, rgba(225, 212, 249, 0.22) 71%, rgba(0, 188, 212, 0) 82%);
+}
+.card2 {
+    background: linear-gradient(18deg, rgba(188, 233, 237, 1) 18%, rgba(188, 233, 237, 0.62) 26%, rgba(188, 233, 237, 0.42) 35%, rgba(188, 233, 237, 0.54) 50%, rgba(188, 233, 237, 0.22) 71%, rgba(0, 188, 212, 0) 82%);
+}
+.card3 {
+    background: linear-gradient(18deg, rgba(238, 222, 182, 1) 18%, rgba(238, 222, 182, 0.62) 26%, rgba(238, 222, 182, 0.42) 35%, rgba(238, 222, 182, 0.54) 50%, rgba(238, 222, 182, 0.22) 71%, rgba(0, 188, 212, 0) 82%);
+}
+
+
+
+.card-overlay {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    padding: 1rem;
+    color: white;
+}
+
+.card-footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.card-title {
+    font-size: 1.5rem !important;
+    font-weight: bold;
+    color: black !important;
+}
+
+.btn {
+    font-size: 0.85rem;
+    padding: 0.4rem 0.8rem;
+}
+
+.msgImgSize1{
+    width: 340px;
+    height: auto;
+}
+.msgImgSize2{
+    width: 270px;
+    height: auto;
+}
+
+.msgImgSize3 {
+    width: 200px;
+    height: auto;
+}
+
+.learn-more-btn-messaging {
+    background-color: transparent !important;
+    border-radius: 8px;
+    border: 1px solid #9977D4 !important;
+    color: black !important;
+    font-weight: 700 !important;
+}
+
+.learn-more-btn-voice {
+    background-color: transparent !important;
+    border-radius: 8px;
+    color: black !important;
+    font-weight: 700 !important;
+}
+
+.learn-more-btn-email {
+    background-color: transparent !important;
+    border-radius: 8px;
+    color: black !important;
+    font-weight: 700 !important;
+}
+.msg-img1{
+    border-radius: 10px;
+    width: 300px !important;
+    height: 170px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: auto;
+    margin-bottom: 100px;
+}
+.msg-img2 {
+    background-color: white;
+    border-radius: 10px;
+    width: 300px !important;
+    height: 170px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: auto;
+    margin-bottom: 100px;
+}
+
+.msg-img3 {
+    background-color: white;
+    border-radius: 10px;
+    width: 210px !important;
+    height: 170px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: auto;
+    margin-bottom: 240px;
+}

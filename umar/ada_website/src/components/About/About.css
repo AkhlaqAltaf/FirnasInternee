@@ -1,0 +1,157 @@
+/* General Styles */
+* {
+    color: white;
+}
+
+.about {
+    padding-top: 153px;
+    padding-bottom: 153px;
+    background: linear-gradient(88deg, rgba(29, 34, 44, 1) 0%, rgba(29, 34, 44, 1) 25%, rgba(32, 40, 59, 1) 35%, rgba(57, 65, 81, 1) 55%);
+}
+
+.button3 {
+    color: #1D222C;
+    background-color: #E3D4FC;
+    font-size: 15px;
+    font-weight: 500;
+    font-style: inherit;
+    width: 550px;
+    max-width: 560px;
+    height: 55px;
+    border-radius: 20px;
+}
+
+.main-heading {
+    margin-top: 3rem;
+    line-height: 1.2;
+    width: 100%;
+    max-width: 800px;
+    text-align: start;
+    font-size: clamp(2.5rem, 5vw, 4.5rem);
+    font-weight: 800;
+}
+
+.discription {
+    width: 100%;
+    max-width: 600px;
+    margin: 0px;
+    font-size: clamp(1rem, 2.5vw, 1.125rem);
+}
+
+.button4 {
+    background-color: #AD95D3;
+    font-weight: 500;
+    color: white;
+    width: 100%;
+    max-width: 131px;
+    height: 40px;
+    border-radius: 8px;
+}
+
+.button4:hover {
+    background-color: rgba(129, 97, 187, 1);
+}
+
+.button5 {
+    background: transparent;
+    border: rgba(129, 97, 187, 1) solid;
+    font-weight: 500;
+    color: white;
+    width: 100%;
+    max-width: 150px;
+    height: 40px;
+    border-radius: 8px;
+    margin: 3rem auto;
+}
+
+.button5:hover {
+    background-color: rgba(129, 97, 187, 1);
+}
+.buttons{
+    margin-top: 30px;
+}
+
+@media (min-width: 767px) and (max-width: 1024px){
+    .about {
+        padding-top: 90px;
+        padding-bottom: 90px;
+    }
+
+    .button4, .button5 {
+        width: 70%;
+        max-width: 300px;
+        margin-top: 30px;
+        margin-bottom: 30px;
+    }
+    .button3{
+        margin-left: 0 !important;
+    }
+
+    .main-heading {
+        width: 100% !important;
+        font-size: clamp(2rem, 5vw, 3rem);
+        margin-top: 1rem;
+        margin-bottom: 1rem;
+    }
+
+    .discription {
+        width: 90%;
+        font-size: 1rem;
+        margin-top: 2rem;
+        margin-bottom: 2rem;
+    }
+    .home-btn{
+        width: 100% !important;
+    }
+    .buttons{
+        display: flex;
+        justify-content: center;
+    }
+}
+
+/* Mobile Styles */
+@media (max-width: 767px) {
+    .about {
+        padding-top: 70px;
+        padding-bottom: 70px;
+    }
+
+    .button3 {
+        font-size: 12px;
+        width: 90% !important;
+        max-width: 300px;
+        margin: 40px auto;
+        border-radius: 10px;
+    }
+
+    .main-heading {
+        font-size: 2rem;
+        text-align: center;
+        margin: 40px auto;
+    }
+
+    .discription {
+        font-size: 0.9rem;
+        text-align: center;
+        margin: 40px auto;
+    }
+
+    .buttons {
+        display: flex;
+        justify-content: center;
+        margin-top: 40px;
+        margin-bottom: 40px;
+    }
+
+    .button4, .button5 {
+        height: 40px;
+        font-size: 0.8rem;
+        width: 100%;
+        max-width: 120px;
+        margin: 0 auto;
+    }
+
+    .home-btn {
+        margin: 0 auto;
+    }
+}

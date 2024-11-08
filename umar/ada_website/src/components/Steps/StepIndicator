@@ -1,0 +1,19 @@
+import React from 'react';
+import './Steps.css';
+
+function StepIndicator({ steps, activeStep }) {
+  return (
+    <div className="d-flex justify-content-start mb-3 step-indicator">
+      {Array.from({ length: steps }, (_, index) => (
+        <div
+          key={index}
+          className={`step me-2 ${index === activeStep ? 'active' : ''}`}
+        >
+          Step {index + 1}
+        </div>
+      ))}
+    </div>
+  );
+}
+
+export default StepIndicator;
